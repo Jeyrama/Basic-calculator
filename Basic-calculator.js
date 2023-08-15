@@ -23,3 +23,13 @@ If an attempt to divide by zero is made, return null
 
 
 // Solution
+
+function calculate(num1, operation, num2) {
+  var ops = {
+    '+': function(x, y) { return x + y; },
+    '-': function(x, y) { return x - y; },
+    '*': function(x, y) { return x * y; },
+    '/': function(x, y) { return y === 0 ? null : x / y; }
+  };
+  return (ops[operation] || function() { return null; })(num1, num2);
+}
