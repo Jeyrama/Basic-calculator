@@ -25,7 +25,7 @@ If an attempt to divide by zero is made, return null
 // Solution
 
 function calculate(num1, operation, num2) {
-  var ops = {
+  let ops = {
     '+': function(x, y) { return x + y; },
     '-': function(x, y) { return x - y; },
     '*': function(x, y) { return x * y; },
