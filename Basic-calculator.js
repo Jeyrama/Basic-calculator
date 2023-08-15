@@ -20,3 +20,6 @@ calculate(4,"/",0) //should return null
 Keep in mind, you cannot divide by zero. 
 If an attempt to divide by zero is made, return null 
 */
+
+
+// Solution
